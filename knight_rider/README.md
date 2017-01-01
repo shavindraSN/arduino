@@ -14,26 +14,32 @@ Simple program to simulate knight rider led illumination
 
 ### Diagram
 ----
-<img src="diagrams/knight_rider.jpg" width="500">
+<img src="diagrams/knight_rider.JPG" width="500">
 
-Connect Ground pin of Arduino(GND) to cathode of LED and pin 13 
-of board to anode of LED through 110ohm (or more) resistor. 
+Complete the circuit using the diagram shown below.
+Place LED's in the bread board and all the (-) side of led's should be placed on the same cloumn so they all can access by 
+one GND pin.
 
 ### Instructions
 ----
-1. First connect items correctly as shown in the diagram. Be sure everything
-connect correctly.
+1. Make sure the diagram matches your circuit.
 
-2. Open code for Hello World project using Arduino IDE.
+2. Open the code given in arduino IDE.
 
-3. Then connect board to computer using USB cable.
+3. Connent the USB and and verify the code.
 
 4. Upload the code to board using upload button. 
 
-You can see LED blinking. If so congratulation. You have successfully
-completed your first project.
+Your mini-Knight Rider is working now.
 
-### Next Step
+### Post Script
 ----
-In this project we use a pin the board and we just give 5v and 0v with a delay 
-in between. Try to change the value in delay(int) method and see the output.
+Understand the coding concepts of Arduino, How to define  Arrays and loops which will help you in future Arduino coding.
+Following code explains how to initialize set of pins in one line using an array.
+int pins[] ={9,10,11,12,13};
+Following code will show how to define those pins as the INPUT and OUTPUT.
+
+void setup() {
+    for (int i=9;i<14;i++) {
+    pinMode(pins[i], OUTPUT);
+    }
