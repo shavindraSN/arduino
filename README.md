@@ -7,5 +7,6 @@ prerequisites for the project and comprehensive guide to build from the scratch.
 
 ## Table of Content
 - Hello World
-- Hello World Advance
+- Hello World 2
+- Knight Rider 
 - Sonar
