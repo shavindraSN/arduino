@@ -1,5 +1,5 @@
 // Initiate the pin
-int ledPin = 10;
+int ledPin = 13;
 
 /*
  * This method is run only once and use to initiate things used
